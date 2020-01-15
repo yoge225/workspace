@@ -1,0 +1,22 @@
+<div class="col-md-6">
+    <h2 class="text-center">Add User</h2>
+  <form >
+    <div class="form-group">
+      <label for="emailId">Email address:</label>
+      <input type="addForm.emailId" [(ngModel)]="emailId" placeholder="emailId" name="emailId" class="form-control" id="emailId">
+      
+    </div>
+  
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input [(ngModel)]="addForm.firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+    </div>
+  
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+     <input [(ngModel)]="addForm.lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+    </div>
+  
+    <button class="btn btn-success" (click)="createUser()">Create</button>
+  </form >
+  </div>
